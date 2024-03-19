@@ -1,0 +1,1 @@
+This is a minecraft server written in typescript (version: 1.8.x, pvn: 47)
