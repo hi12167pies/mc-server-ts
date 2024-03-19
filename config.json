@@ -1,0 +1,9 @@
+{
+  "port": 25566,
+  "max_players": 100,
+  "session_server": "https://sessionserver.mojang.com",
+  "ping_info": {
+    "version_name": "1.8.8",
+    "description": "Server made in typescript!"
+  }
+}
