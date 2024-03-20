@@ -46,8 +46,8 @@ export class Connection implements BufferReadable, BufferWritable {
    */
 
   private readByteFromBuffer(): number {
-    let byte = this.dataBuffer[0]
-    this.dataBuffer = this.dataBuffer.slice(1)
+    let byte = this.dataBuffer.shift()
+    if (byte == undefined) throw new Error("No data in buffer.")
     if (this.isEncryption()) {
       byte = this.cipherDecrypt(Buffer.from([byte]))[0]
     }
