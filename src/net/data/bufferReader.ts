@@ -7,7 +7,7 @@ export interface BufferReadable {
 }
 
 function isBufferReadable(object: any): object is BufferReadable {
-  return 'writeByte' in object
+  return 'readByte' in object
 }
 
 export class BufferReader {

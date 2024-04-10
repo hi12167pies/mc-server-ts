@@ -55,7 +55,7 @@ export const LoginPacketHandler: PacketHandler = [
       connection.keys = keys
       connection.player.info.username = packet.name
   
-      connection.sendPacket(new OutEncryptionRequestPacket(keys.publicKey, connection.verifyToken))  
+      connection.sendPacket(new OutEncryptionRequestPacket(keys.publicKey, connection.verifyToken))
     }
   },
 

@@ -114,9 +114,9 @@ export class BufferWriter {
     this.writeVarInt(value)
   }
   
-  public writeString(data: string) {
-    this.writeVarInt(data.length)
-    data.split("").forEach(charString => {
+  public writeString(string: string) {
+    this.writeVarInt(string.length)
+    string.split("").forEach(charString => {
       const char = charString.charCodeAt(0)
       this.writeUnsignedByte(char)
     })
