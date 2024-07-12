@@ -1,3 +1,5 @@
+New and better version: [https://github.com/hi12167pies/mc-server-ts2](https://github.com/hi12167pies/mc-server-ts2)
+
 This is a minecraft server written in typescript (version: 1.8.x, pvn: 47)
 
 Currently it will authenticate the player with mojang and show a chunk with some random blocks.
